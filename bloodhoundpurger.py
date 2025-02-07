@@ -27,7 +27,7 @@ def main():
     if response.status_code == 200:
         try:
             data = response.json().get('data')
-            print(data)
+            #print(data)
             token = data["session_token"]
             if token:
                 print("Authentication successful, token obtained.")
